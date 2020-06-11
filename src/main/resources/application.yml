@@ -1,0 +1,23 @@
+server:
+  port: 9090
+---
+code:
+  secret: secret message
+  bignumber: ${random.long}
+  uuid: ${random.uuid}
+
+---
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:mysql://localhost:3306/test_db?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: test_user
+    password: test1234
+
+#--
+#spring:
+#  profiles: learning
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/test_db?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
+#    username: test_user
+#    password: test1234
