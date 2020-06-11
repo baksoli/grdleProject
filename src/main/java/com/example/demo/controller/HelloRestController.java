@@ -18,6 +18,6 @@ public class HelloRestController {
         String bigNumber = randomValuePropertySource.getBignumber();
         String secret = randomValuePropertySource.getSecret();
         
-        return "Hello !! 반갑습니다 "+uuid+"!!!! "+secret + ", "+bigNumber;
+        return "Hello !! 반갑습니다 uuid :: "+uuid+"!!!! "+secret + ", bigNumber :: "+bigNumber;
     }
 }
