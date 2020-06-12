@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.controller.HelloRestController;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 
